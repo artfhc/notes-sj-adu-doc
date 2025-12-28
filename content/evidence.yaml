@@ -1,0 +1,169 @@
+site:
+  title: "ADU Issue Log"
+  location_general: "San Jose, CA (ADU)"
+  last_updated: "2025-12-27"
+  disclaimer: "Public documentation of construction issues. Personal identifiers removed."
+
+issues:
+  - id: "wall-cracks"
+    title: "Wall cracks in multiple rooms"
+    slug: "wall-cracks"
+    status: "Open"
+    summary: "Vertical/horizontal hairline cracks observed throughout the unit."
+    rooms: ["master_bed", "bedroom", "bath_1", "bath_2", "living", "laundry"]
+    requested_remediation:
+      - "Assess root cause (settlement vs framing)"
+      - "Repair and re-texture/repaint affected drywall"
+      - "Confirm if any structural movement is present"
+
+  - id: "doors-not-closing"
+    title: "Doors not closing (frame shift)"
+    slug: "doors-not-closing"
+    status: "Open"
+    summary: "Multiple interior doors do not latch/close properly, suggesting frame alignment shift."
+    rooms: ["master_bed", "bath_1", "bath_2", "bedroom", "laundry"]
+    requested_remediation:
+      - "Re-square door frames"
+      - "Adjust hinges/strike plates"
+      - "Verify framing alignment and settlement impacts"
+
+  - id: "water-heater-door"
+    title: "Water heater/tank access door left open"
+    slug: "water-heater-door"
+    status: "Open"
+    summary: "Access door to water heater/tank was found not closed."
+    rooms: ["utility"]
+    requested_remediation:
+      - "Close/secure access panel"
+      - "Confirm no code/safety concerns"
+
+  - id: "window-water-intrusion"
+    title: "Master bedroom window left open → water intrusion"
+    slug: "window-left-open-water-intrusion"
+    status: "Open"
+    summary: "Master bedroom window was open; water leaked in. Watermarks on wall and floor."
+    rooms: ["master_bed"]
+    requested_remediation:
+      - "Water intrusion assessment (moisture test)"
+      - "Dry-out and remediation plan"
+      - "Repair drywall/floor as needed; confirm mold prevention steps"
+
+timeline:
+  - date: "2025-12-26"
+    title: "Site visit — issues discovered"
+    notes:
+      - "Cracks observed in all rooms"
+      - "Multiple doors not closing"
+      - "Water heater door not closed"
+      - "Window open; water intrusion with visible watermarks"
+    related_issues: ["wall-cracks", "doors-not-closing", "water-heater-door", "window-water-intrusion"]
+
+media:
+  - id: "img_001"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["wall-cracks"]
+    caption: "Vertical crack running from ceiling down the wall near window"
+    original_filename: "PXL_20251226_001.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_001.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_001.webp"
+
+  - id: "img_002"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "living"
+    issue_tags: ["wall-cracks"]
+    caption: "Horizontal crack along ceiling junction in living room"
+    original_filename: "PXL_20251226_002.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_002.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_002.webp"
+
+  - id: "img_003"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["doors-not-closing"]
+    caption: "Master bedroom door showing gap preventing proper closure"
+    original_filename: "PXL_20251226_003.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_003.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_003.webp"
+
+  - id: "img_004"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_1"
+    issue_tags: ["doors-not-closing"]
+    caption: "Bathroom door frame misalignment visible at strike plate"
+    original_filename: "PXL_20251226_004.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_004.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_004.webp"
+
+  - id: "img_005"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "Water heater access panel found open"
+    original_filename: "PXL_20251226_005.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_005.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_005.webp"
+
+  - id: "img_006"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Window left open allowing water entry"
+    original_filename: "PXL_20251226_006.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_006.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_006.webp"
+
+  - id: "img_007"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Water stains visible on wall beneath window"
+    original_filename: "PXL_20251226_007.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_007.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_007.webp"
+
+  - id: "img_008"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Floor showing water damage and discoloration"
+    original_filename: "PXL_20251226_008.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_008.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_008.webp"
+
+  - id: "vid_001"
+    type: "video"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Video walkthrough showing extent of water damage in master bedroom"
+    original_filename: "VID_20251226_001.mp4"
+    public_url: "https://example.r2.cloudflarestorage.com/videos/vid_001.mp4"
+
+  - id: "img_009"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bedroom"
+    issue_tags: ["wall-cracks"]
+    caption: "Multiple cracks radiating from corner in second bedroom"
+    original_filename: "PXL_20251226_009.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_009.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_009.webp"
+
+  - id: "img_010"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "laundry"
+    issue_tags: ["wall-cracks", "doors-not-closing"]
+    caption: "Laundry room showing wall crack and door alignment issue"
+    original_filename: "PXL_20251226_010.jpg"
+    public_url: "https://example.r2.cloudflarestorage.com/photos/img_010.jpg"
+    thumb_url: "https://example.r2.cloudflarestorage.com/thumbs/img_010.webp"

@@ -1,0 +1,148 @@
+---
+import Layout from '../components/Layout.astro';
+import { getMediaItems, getIssues, getSiteMetadata } from '../lib/content';
+
+const media = getMediaItems();
+const issues = getIssues();
+const site = getSiteMetadata();
+
+const photoCount = media.filter((m) => m.type === 'photo').length;
+const videoCount = media.filter((m) => m.type === 'video').length;
+---
+
+<Layout title="Downloads">
+  <div class="space-y-8">
+    <!-- Header -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Downloads & Exports</h2>
+      <p class="text-gray-600">
+        Download evidence logs and exports for record-keeping or sharing with contractors
+        and legal representatives.
+      </p>
+    </div>
+
+    <!-- CSV Export -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+      <div class="p-6">
+        <div class="flex items-start">
+          <div class="flex-shrink-0">
+            <svg
+              class="h-10 w-10 text-green-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+          </div>
+          <div class="ml-4 flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Evidence Log (CSV)</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              A comprehensive spreadsheet of all evidence items including IDs, dates, rooms,
+              issue tags, captions, and file URLs. Compatible with Excel, Google Sheets,
+              and other spreadsheet applications.
+            </p>
+            <div class="bg-gray-50 rounded-md p-3 mb-4">
+              <div class="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <span class="text-gray-500">Total entries:</span>
+                  <span class="ml-2 font-semibold text-gray-900">{media.length}</span>
+                </div>
+                <div>
+                  <span class="text-gray-500">Photos:</span>
+                  <span class="ml-2 font-semibold text-gray-900">{photoCount}</span>
+                </div>
+                <div>
+                  <span class="text-gray-500">Videos:</span>
+                  <span class="ml-2 font-semibold text-gray-900">{videoCount}</span>
+                </div>
+                <div>
+                  <span class="text-gray-500">Issues:</span>
+                  <span class="ml-2 font-semibold text-gray-900">{issues.length}</span>
+                </div>
+              </div>
+            </div>
+            <a
+              href="/api/evidence.csv"
+              download="evidence-log.csv"
+              class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Download CSV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Future Downloads Section -->
+    <div class="bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 p-8">
+      <div class="text-center">
+        <svg
+          class="mx-auto h-12 w-12 text-gray-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+          />
+        </svg>
+        <h3 class="mt-2 text-sm font-medium text-gray-900">Additional Downloads</h3>
+        <p class="mt-1 text-sm text-gray-500">
+          Zipped evidence packages and additional exports will be available here in the
+          future.
+        </p>
+      </div>
+    </div>
+
+    <!-- Documentation Info -->
+    <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+      <div class="flex">
+        <div class="flex-shrink-0">
+          <svg
+            class="h-5 w-5 text-blue-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="ml-3">
+          <h3 class="text-sm font-medium text-blue-800">About This Data</h3>
+          <div class="mt-2 text-sm text-blue-700">
+            <p>
+              All exported data is current as of{' '}
+              <strong>{site.last_updated}</strong>. For the latest information, please
+              refer to the live website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

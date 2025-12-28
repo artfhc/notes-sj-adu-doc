@@ -1,0 +1,137 @@
+---
+import Layout from '../components/Layout.astro';
+import IssueCard from '../components/IssueCard.astro';
+import { getIssues, getSiteMetadata, getTimeline } from '../lib/content';
+
+const issues = getIssues();
+const site = getSiteMetadata();
+const timeline = getTimeline();
+const latestEvent = timeline[0]; // Assuming timeline is sorted by date desc
+---
+
+<Layout title="Overview">
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Issue Overview</h2>
+      <p class="text-gray-600 mb-6">
+        This site documents construction issues discovered at an ADU in {site.location_general}.
+        Below is a summary of all identified issues along with supporting evidence.
+      </p>
+
+      {latestEvent && (
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <svg
+                class="h-5 w-5 text-blue-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="ml-3">
+              <h3 class="text-sm font-medium text-blue-800">Latest Update</h3>
+              <div class="mt-2 text-sm text-blue-700">
+                <p class="font-semibold">{latestEvent.title}</p>
+                <p class="text-blue-600 text-xs mt-1">{latestEvent.date}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
+    <!-- Summary Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-red-100 rounded-md p-3">
+            <svg
+              class="h-6 w-6 text-red-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+              />
+            </svg>
+          </div>
+          <div class="ml-4">
+            <p class="text-sm font-medium text-gray-500">Total Issues</p>
+            <p class="text-2xl font-semibold text-gray-900">{issues.length}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-yellow-100 rounded-md p-3">
+            <svg
+              class="h-6 w-6 text-yellow-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="ml-4">
+            <p class="text-sm font-medium text-gray-500">Open Issues</p>
+            <p class="text-2xl font-semibold text-gray-900">
+              {issues.filter((i) => i.status === 'Open').length}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-blue-100 rounded-md p-3">
+            <svg
+              class="h-6 w-6 text-blue-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+          </div>
+          <div class="ml-4">
+            <p class="text-sm font-medium text-gray-500">Timeline Events</p>
+            <p class="text-2xl font-semibold text-gray-900">{timeline.length}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Issues List -->
+    <div>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Documented Issues</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {issues.map((issue) => (
+          <IssueCard issue={issue} />
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>

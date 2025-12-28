@@ -1,0 +1,136 @@
+---
+// Modal component for viewing media in a lightbox
+---
+
+<div
+  id="media-modal"
+  class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4"
+>
+  <button
+    id="modal-close"
+    class="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+    aria-label="Close modal"
+  >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  </button>
+
+  <div class="max-w-6xl w-full max-h-full flex flex-col">
+    <div id="modal-content" class="flex-1 flex items-center justify-center overflow-hidden">
+      <!-- Content will be injected here -->
+    </div>
+
+    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 mt-4">
+      <p id="modal-caption" class="text-white text-lg mb-2"></p>
+      <div class="flex items-center justify-between text-sm text-gray-300">
+        <span id="modal-room"></span>
+        <span id="modal-date"></span>
+      </div>
+      <a
+        id="modal-original-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block mt-3 text-blue-400 hover:text-blue-300 text-sm"
+      >
+        Open original →
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Modal functionality
+  const modal = document.getElementById('media-modal');
+  const modalContent = document.getElementById('modal-content');
+  const modalCaption = document.getElementById('modal-caption');
+  const modalRoom = document.getElementById('modal-room');
+  const modalDate = document.getElementById('modal-date');
+  const modalOriginalLink = document.getElementById('modal-original-link') as HTMLAnchorElement;
+  const modalClose = document.getElementById('modal-close');
+
+  // Open modal when clicking on media items
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    const mediaLink = target.closest('.media-link') as HTMLAnchorElement;
+
+    if (mediaLink) {
+      e.preventDefault();
+
+      const mediaType = mediaLink.getAttribute('data-type');
+      const mediaUrl = mediaLink.getAttribute('data-url');
+      const caption = mediaLink.getAttribute('data-caption');
+      const room = mediaLink.getAttribute('data-room');
+      const date = mediaLink.getAttribute('data-date');
+
+      if (modalContent && modalCaption && modalRoom && modalDate && modal) {
+        // Clear previous content
+        modalContent.innerHTML = '';
+
+        // Add new content
+        if (mediaType === 'photo') {
+          const img = document.createElement('img');
+          img.src = mediaUrl || '';
+          img.alt = caption || '';
+          img.className = 'max-w-full max-h-[70vh] object-contain mx-auto';
+          modalContent.appendChild(img);
+        } else if (mediaType === 'video') {
+          const video = document.createElement('video');
+          video.src = mediaUrl || '';
+          video.controls = true;
+          video.preload = 'metadata';
+          video.className = 'max-w-full max-h-[70vh] mx-auto';
+          modalContent.appendChild(video);
+        }
+
+        // Set metadata
+        modalCaption.textContent = caption || '';
+        modalRoom.textContent = room || '';
+        modalDate.textContent = date || '';
+        modalOriginalLink.href = mediaUrl || '';
+
+        // Show modal
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+  });
+
+  // Close modal
+  function closeModal() {
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+
+      // Stop any playing videos
+      const video = modalContent?.querySelector('video');
+      if (video) {
+        video.pause();
+      }
+    }
+  }
+
+  modalClose?.addEventListener('click', closeModal);
+
+  // Close on background click
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+</script>

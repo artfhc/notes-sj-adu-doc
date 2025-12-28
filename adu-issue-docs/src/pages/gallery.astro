@@ -1,0 +1,117 @@
+---
+import Layout from '../components/Layout.astro';
+import MediaGrid from '../components/MediaGrid.astro';
+import MediaModal from '../components/MediaModal.astro';
+import { getMediaItems } from '../lib/content';
+
+const media = getMediaItems();
+
+// Sort by date descending (newest first)
+const sortedMedia = media.sort((a, b) => b.date_taken.localeCompare(a.date_taken));
+
+// Get unique issue tags for filter info
+const issueTags = [...new Set(media.flatMap((item) => item.issue_tags))];
+---
+
+<Layout title="Gallery">
+  <div class="space-y-8">
+    <!-- Header -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Evidence Gallery</h2>
+      <p class="text-gray-600 mb-4">
+        Browse all photos and videos documenting the construction issues. Use the filters
+        below to narrow down by media type, room, or sort by date.
+      </p>
+      <div class="flex items-center text-sm text-gray-500">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        <span>Click on any item to view in full size</span>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+        <div class="flex items-center">
+          <svg
+            class="w-8 h-8 text-blue-600 mr-3"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+          <div>
+            <p class="text-2xl font-bold text-gray-900">{media.length}</p>
+            <p class="text-sm text-gray-500">Total Items</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+        <div class="flex items-center">
+          <svg
+            class="w-8 h-8 text-green-600 mr-3"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+          <div>
+            <p class="text-2xl font-bold text-gray-900">
+              {media.filter((m) => m.type === 'photo').length}
+            </p>
+            <p class="text-sm text-gray-500">Photos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+        <div class="flex items-center">
+          <svg
+            class="w-8 h-8 text-purple-600 mr-3"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+            />
+          </svg>
+          <div>
+            <p class="text-2xl font-bold text-gray-900">
+              {media.filter((m) => m.type === 'video').length}
+            </p>
+            <p class="text-sm text-gray-500">Videos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Media Grid with Filters -->
+    <MediaGrid media={sortedMedia} showFilters={true} />
+
+    <!-- Modal -->
+    <MediaModal />
+  </div>
+</Layout>

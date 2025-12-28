@@ -1,0 +1,430 @@
+site:
+  title: "ADU Issue Log"
+  location_general: "San Jose, CA (ADU)"
+  last_updated: "2025-12-28"
+  disclaimer: "Public documentation of construction issues. Personal identifiers removed."
+
+issues:
+  - id: "wall-cracks"
+    title: "Wall cracks in multiple rooms"
+    slug: "wall-cracks"
+    status: "Open"
+    summary: "Vertical/horizontal hairline cracks observed throughout the unit."
+    rooms: ["master_bed", "bedroom", "bath_1", "bath_2", "living", "laundry"]
+    requested_remediation:
+      - "Assess root cause (settlement vs framing)"
+      - "Repair and re-texture/repaint affected drywall"
+      - "Confirm if any structural movement is present"
+
+  - id: "doors-not-closing"
+    title: "Doors not closing (frame shift)"
+    slug: "doors-not-closing"
+    status: "Open"
+    summary: "Multiple interior doors do not latch/close properly, suggesting frame alignment shift."
+    rooms: ["master_bed", "bath_1", "bath_2", "bedroom", "laundry"]
+    requested_remediation:
+      - "Re-square door frames"
+      - "Adjust hinges/strike plates"
+      - "Verify framing alignment and settlement impacts"
+
+  - id: "water-heater-door"
+    title: "Water heater/tank access door left open"
+    slug: "water-heater-door"
+    status: "Open"
+    summary: "Access door to water heater/tank was found not closed."
+    rooms: ["utility"]
+    requested_remediation:
+      - "Close/secure access panel"
+      - "Confirm no code/safety concerns"
+
+  - id: "window-water-intrusion"
+    title: "Master bedroom window left open → water intrusion"
+    slug: "window-left-open-water-intrusion"
+    status: "Open"
+    summary: "Master bedroom window was open; water leaked in. Watermarks on wall and floor."
+    rooms: ["master_bed"]
+    requested_remediation:
+      - "Water intrusion assessment (moisture test)"
+      - "Dry-out and remediation plan"
+      - "Repair drywall/floor as needed; confirm mold prevention steps"
+
+timeline:
+  - date: "2025-12-26"
+    title: "Site visit — issues discovered"
+    notes:
+      - "Cracks observed in all rooms"
+      - "Multiple doors not closing"
+      - "Water heater door not closed"
+      - "Window open; water intrusion with visible watermarks"
+    related_issues: ["wall-cracks", "doors-not-closing", "water-heater-door", "window-water-intrusion"]
+
+media:
+  - id: "crack_001"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical hairline crack is visible on the wall surface in the master bedroom."
+    original_filename: "PXL_20251226_234049559.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234049559.jpg"
+
+  - id: "crack_002"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["wall-cracks"]
+    caption: "A close-up view shows a fine hairline crack along the wall plane in the master bedroom."
+    original_filename: "PXL_20251226_234059095.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234059095.jpg"
+
+  - id: "crack_003"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["wall-cracks"]
+    caption: "Multiple hairline cracks are visible forming a subtle pattern on the master bedroom wall."
+    original_filename: "PXL_20251226_234133536.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234133536.jpg"
+
+  - id: "crack_004"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bedroom"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical wall crack is visible in the bedroom adjacent to the master bedroom."
+    original_filename: "PXL_20251226_234337818.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234337818.jpg"
+
+  - id: "crack_005"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bedroom"
+    issue_tags: ["wall-cracks"]
+    caption: "A hairline wall crack is visible under low lighting conditions in the bedroom adjacent to the master bedroom."
+    original_filename: "PXL_20251226_234634054.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234634054.NIGHT.jpg"
+
+  - id: "crack_006"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bedroom"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical crack extends along the wall surface in the bedroom adjacent to the master bedroom."
+    original_filename: "PXL_20251226_234656188.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234656188.NIGHT.jpg"
+
+  - id: "crack_007"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "living"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical wall crack is visible in the living room under night lighting."
+    original_filename: "PXL_20251226_234707526.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234707526.NIGHT.jpg"
+
+  - id: "crack_008"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "living"
+    issue_tags: ["wall-cracks"]
+    caption: "A horizontal hairline crack runs along the ceiling-to-wall junction in the living room."
+    original_filename: "PXL_20251226_234755748.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234755748.NIGHT.jpg"
+
+  - id: "crack_009"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "living"
+    issue_tags: ["wall-cracks"]
+    caption: "A diagonal crack is visible radiating from the corner of a living room wall."
+    original_filename: "PXL_20251226_234839091.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234839091.NIGHT.jpg"
+
+  - id: "crack_010"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_1"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical wall crack is visible in Bathroom 1 under night lighting."
+    original_filename: "PXL_20251226_234854340.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234854340.NIGHT.jpg"
+
+  - id: "crack_011"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_1"
+    issue_tags: ["wall-cracks"]
+    caption: "Multiple fine cracks form a branching pattern on the wall surface in Bathroom 1."
+    original_filename: "PXL_20251226_234901176.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234901176.NIGHT.jpg"
+
+  - id: "crack_012"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_1"
+    issue_tags: ["wall-cracks"]
+    caption: "A close-up view shows hairline cracking along the wall in Bathroom 1."
+    original_filename: "PXL_20251226_234914541.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_234914541.NIGHT.jpg"
+
+  - id: "crack_013"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_2"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical crack is visible on the wall surface in Bathroom 2."
+    original_filename: "PXL_20251226_235138154.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235138154.NIGHT.jpg"
+
+  - id: "crack_014"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_2"
+    issue_tags: ["wall-cracks"]
+    caption: "A crack extends outward from the corner joint of the wall in Bathroom 2."
+    original_filename: "PXL_20251226_235142031.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235142031.NIGHT.jpg"
+
+  - id: "crack_015"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_2"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical hairline crack runs down the wall surface in Bathroom 2."
+    original_filename: "PXL_20251226_235146212.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235146212.NIGHT.jpg"
+
+  - id: "crack_016"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_2"
+    issue_tags: ["wall-cracks"]
+    caption: "Multiple hairline cracks are visible across the wall surface in Bathroom 2."
+    original_filename: "PXL_20251226_235158335.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235158335.NIGHT.jpg"
+
+  - id: "crack_017"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "laundry"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical wall crack is visible in the laundry room under night lighting."
+    original_filename: "PXL_20251226_235224324.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235224324.NIGHT.jpg"
+
+  - id: "crack_018"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "laundry"
+    issue_tags: ["wall-cracks"]
+    caption: "A branching crack pattern is visible on the laundry room wall."
+    original_filename: "PXL_20251226_235237111.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235237111.NIGHT.jpg"
+
+  - id: "crack_019"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "laundry"
+    issue_tags: ["wall-cracks"]
+    caption: "A vertical crack extends downward from the ceiling in the laundry room."
+    original_filename: "PXL_20251226_235256626.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235256626.NIGHT.jpg"
+
+  - id: "crack_020"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "laundry"
+    issue_tags: ["wall-cracks"]
+    caption: "A diagonal crack is visible at the wall corner in the laundry room."
+    original_filename: "PXL_20251226_235333056.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235333056.NIGHT.jpg"
+
+  - id: "crack_021"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["wall-cracks"]
+    caption: "A hairline crack is visible along the ceiling surface in the master bedroom."
+    original_filename: "PXL_20251226_235411021.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235411021.NIGHT.jpg"
+
+  - id: "crack_022"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["wall-cracks"]
+    caption: "A crack is visible at the wall and ceiling junction in the master bedroom."
+    original_filename: "PXL_20251226_235420586.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235420586.NIGHT.jpg"
+
+  - id: "crack_023"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bedroom"
+    issue_tags: ["wall-cracks"]
+    caption: "Multiple cracks radiate outward from a wall corner in the bedroom adjacent to the master bedroom."
+    original_filename: "PXL_20251226_235437852.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/wall-cracks/PXL_20251226_235437852.jpg"
+
+  - id: "doors_vid_001"
+    type: "video"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["doors-not-closing"]
+    caption: "Video demonstration of master bedroom door not closing properly"
+    original_filename: "PXL_20251226_235750570.mp4"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/doors-not-closing/PXL_20251226_235750570.mp4"
+
+  - id: "doors_img_001"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "bath_1"
+    issue_tags: ["doors-not-closing"]
+    caption: "Bathroom door frame misalignment visible"
+    original_filename: "PXL_20251226_235807912.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/doors-not-closing/PXL_20251226_235807912.jpg"
+
+  - id: "doors_vid_002"
+    type: "video"
+    date_taken: "2025-12-26"
+    room: "bath_2"
+    issue_tags: ["doors-not-closing"]
+    caption: "Video showing bathroom door not latching properly due to frame shift"
+    original_filename: "PXL_20251226_235852975.mp4"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/doors-not-closing/PXL_20251226_235852975.mp4"
+
+  - id: "doors_vid_003"
+    type: "video"
+    date_taken: "2025-12-26"
+    room: "bedroom"
+    issue_tags: ["doors-not-closing"]
+    caption: "Video demonstration of bedroom door alignment issue"
+    original_filename: "PXL_20251226_235913730.mp4"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/doors-not-closing/PXL_20251226_235913730.mp4"
+
+  - id: "heater_001"
+    type: "photo"
+    date_taken: "2025-12-27"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "The water heater access panel was left open, indicating the compartment was not properly secured or maintained."
+    original_filename: "PXL_20251227_001133181.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/water-heater-door/PXL_20251227_001133181.jpg"
+
+  - id: "heater_002"
+    type: "photo"
+    date_taken: "2025-12-27"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "The water heater access door was not latched or closed, reflecting improper handling or incomplete work."
+    original_filename: "PXL_20251227_001141958.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/water-heater-door/PXL_20251227_001141958.jpg"
+
+  - id: "heater_003"
+    type: "photo"
+    date_taken: "2025-12-27"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "The water heater compartment was left open, exposing internal components to the exterior environment."
+    original_filename: "PXL_20251227_001203070.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/water-heater-door/PXL_20251227_001203070.jpg"
+
+  - id: "heater_004"
+    type: "photo"
+    date_taken: "2025-12-27"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "The water heater tank was visible through the open compartment, suggesting the enclosure was not properly closed after installation or inspection."
+    original_filename: "PXL_20251227_001232179.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/water-heater-door/PXL_20251227_001232179.jpg"
+
+  - id: "heater_005"
+    type: "photo"
+    date_taken: "2025-12-27"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "The access door was not properly fastened, showing a lack of attention to securing the water heater enclosure."
+    original_filename: "PXL_20251227_001238902.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/water-heater-door/PXL_20251227_001238902.jpg"
+
+  - id: "heater_006"
+    type: "photo"
+    date_taken: "2025-12-27"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "A wider view shows the water heater area with the access panel left open, indicating careless site conditions."
+    original_filename: "PXL_20251227_001245827.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/water-heater-door/PXL_20251227_001245827.jpg"
+
+  - id: "heater_007"
+    type: "photo"
+    date_taken: "2025-12-27"
+    room: "utility"
+    issue_tags: ["water-heater-door"]
+    caption: "An alternate angle further documents that the water heater access panel remained open and unattended."
+    original_filename: "PXL_20251227_001250141.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/water-heater-door/PXL_20251227_001250141.jpg"
+
+  - id: "water_001"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Window left open allowing water entry"
+    original_filename: "PXL_20251226_234248265.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/window-water-intrusion/PXL_20251226_234248265.jpg"
+
+  - id: "water_002"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Water damage visible beneath window (night photo)"
+    original_filename: "PXL_20251226_234328753.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/window-water-intrusion/PXL_20251226_234328753.NIGHT.jpg"
+
+  - id: "water_003"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Water stains on wall and floor from window intrusion"
+    original_filename: "PXL_20251226_234405437.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/window-water-intrusion/PXL_20251226_234405437.jpg"
+
+  - id: "water_004"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Close-up of water damage on wall beneath window"
+    original_filename: "PXL_20251226_234409275.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/window-water-intrusion/PXL_20251226_234409275.jpg"
+
+  - id: "water_005"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Watermarks and discoloration on wall (night photo)"
+    original_filename: "PXL_20251226_234505106.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/window-water-intrusion/PXL_20251226_234505106.NIGHT.jpg"
+
+  - id: "water_006"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Floor showing water damage and discoloration"
+    original_filename: "PXL_20251226_234949467.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/window-water-intrusion/PXL_20251226_234949467.jpg"
+
+  - id: "water_007"
+    type: "photo"
+    date_taken: "2025-12-26"
+    room: "master_bed"
+    issue_tags: ["window-water-intrusion"]
+    caption: "Extent of water damage in master bedroom (night photo)"
+    original_filename: "PXL_20251226_235700800.NIGHT.jpg"
+    public_url: "https://pub-662681902c214e37878a6aba739342f5.r2.dev/window-water-intrusion/PXL_20251226_235700800.NIGHT.jpg"
+
