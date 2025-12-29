@@ -107,7 +107,7 @@ export function getUniqueIssueTags(): string[] {
 }
 
 /**
- * Generate CSV export of evidence log
+ * Generate CSV export of documentation log
  */
 export function generateEvidenceCSV(): string {
   const media = getMediaItems();

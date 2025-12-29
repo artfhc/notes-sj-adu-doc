@@ -9,7 +9,7 @@ export const GET: APIRoute = () => {
       status: 200,
       headers: {
         'Content-Type': 'text/csv',
-        'Content-Disposition': 'attachment; filename="evidence-log.csv"',
+        'Content-Disposition': 'attachment; filename="documentation-log.csv"',
       },
     });
   } catch (error) {

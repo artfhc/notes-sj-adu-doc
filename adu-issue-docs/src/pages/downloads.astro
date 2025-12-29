@@ -16,7 +16,7 @@ const videoCount = media.filter((m) => m.type === 'video').length;
     <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
       <h2 class="text-3xl font-bold text-gray-900 mb-2">Downloads & Exports</h2>
       <p class="text-gray-600">
-        Download evidence logs and exports for record-keeping or sharing with contractors
+        Download documentation logs and exports for record-keeping or sharing with contractors
         and legal representatives.
       </p>
     </div>
@@ -41,9 +41,9 @@ const videoCount = media.filter((m) => m.type === 'video').length;
             </svg>
           </div>
           <div class="ml-4 flex-1">
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Evidence Log (CSV)</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Documentation Log (CSV)</h3>
             <p class="text-gray-600 text-sm mb-4">
-              A comprehensive spreadsheet of all evidence items including IDs, dates, rooms,
+              A comprehensive spreadsheet of all documentation items including IDs, dates, rooms,
               issue tags, captions, and file URLs. Compatible with Excel, Google Sheets,
               and other spreadsheet applications.
             </p>
@@ -69,7 +69,7 @@ const videoCount = media.filter((m) => m.type === 'video').length;
             </div>
             <a
               href="/api/evidence.csv"
-              download="evidence-log.csv"
+              download="documentation-log.csv"
               class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors"
             >
               <svg
@@ -110,7 +110,7 @@ const videoCount = media.filter((m) => m.type === 'video').length;
         </svg>
         <h3 class="mt-2 text-sm font-medium text-gray-900">Additional Downloads</h3>
         <p class="mt-1 text-sm text-gray-500">
-          Zipped evidence packages and additional exports will be available here in the
+          Zipped documentation packages and additional exports will be available here in the
           future.
         </p>
       </div>
