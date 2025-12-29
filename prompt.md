@@ -76,10 +76,10 @@ issues:
       - "Adjust hinges/strike plates"
       - "Verify framing alignment and settlement impacts"
   - id: "water-heater-door"
-    title: "Water heater/tank access door left open"
+    title: "Backyard fire suppression water tank access door left open"
     slug: "water-heater-door"
     status: "Open"
-    summary: "Access door to water heater/tank was found not closed."
+    summary: "Access door to backyard fire suppression water tank was found not closed."
     rooms: ["utility"]
     requested_remediation:
       - "Close/secure access panel"
@@ -101,7 +101,7 @@ timeline:
     notes:
       - "Cracks observed in all rooms"
       - "Multiple doors not closing"
-      - "Water heater door not closed"
+      - "Backyard fire suppression water tank access door not closed"
       - "Window open; water intrusion with visible watermarks"
     related_issues: ["wall-cracks", "doors-not-closing", "water-heater-door", "window-water-intrusion"]
 
