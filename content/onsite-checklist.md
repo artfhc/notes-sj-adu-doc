@@ -1,349 +1,207 @@
-# ADU Onsite Inspection Checklist
+# ADU Onsite Inspection – Simplified Checklist
 
-**Location:** San Jose, CA ADU
+**Location:** _______________
 **Date:** _______________
 **Inspector:** _______________
-**Weather Conditions:** _______________
+**Weather:** _______________
 
 ---
 
-## Equipment to Bring
+## 1️⃣ Bring (Minimal Kit)
 
-- [ ] Digital camera / smartphone with good camera
-- [ ] Moisture meter (essential for water damage assessment)
-- [ ] Tape measure
-- [ ] Level (digital preferred)
-- [ ] Crack gauge or ruler with fine measurements
-- [ ] Flashlight / headlamp
-- [ ] Feeler gauge (for door gaps)
-- [ ] Screwdriver set
-- [ ] Notepad / voice recorder
-- [ ] Infrared thermometer (optional, for hidden moisture)
-- [ ] Ruler or coin for scale reference in photos
+- [ ] Phone (camera + video)
+- [ ] Flashlight
+- [ ] Small ruler or coin (photo scale)
+- [ ] Level (or level app)
+- [ ] Moisture meter (if available)
+- [ ] Notes app / notebook
 
 ---
 
-## 1. Wall Cracks Assessment
+## 2️⃣ Structural Red Flags (5–10 min)
 
-**Rooms to inspect:** Master bedroom, bedroom, bath 1, bath 2, living room, laundry
+### Walls & Ceilings
 
-### For each room with cracks:
+- [ ] New or widened cracks since last visit
+- [ ] Cracks near doors/windows
+- [ ] Cracks at ceiling-wall junctions
+- [ ] Horizontal or diagonal cracks (flag)
 
-**Room: _____________________**
+**📸 Take:**
+- 1 wide shot per room
+- Close-up of each crack with scale
 
-- [ ] Photograph overall room condition
-- [ ] Document crack locations on walls/ceiling
-- [ ] Measure crack width: _______ inches (use crack gauge)
-- [ ] Pattern:
-  - [ ] Vertical (settling)
-  - [ ] Horizontal (structural stress)
-  - [ ] Diagonal (foundation issues)
-  - [ ] Corner cracks
-  - [ ] Ceiling-wall junction
-  - [ ] Around doors/windows
-- [ ] Evidence of active movement:
-  - [ ] Fresh drywall dust present
-  - [ ] Paint flaking at crack edges
-  - [ ] Clean/sharp crack edges
-- [ ] Take close-up photos with scale reference
-- [ ] Notes: _________________________________
+**Crack size estimate:**
+- [ ] Hairline (<1/16")
+- [ ] Moderate (1/16"–1/4")
+- [ ] Severe (>1/4")
 
-### Foundation & Structure Check:
+**Notes:** _______________________________________________
 
-- [ ] Inspect exterior foundation for cracks
-- [ ] Check for step cracks in masonry
-- [ ] Look for separation between foundation and structure
-- [ ] Check floor level with ball or level (document slope)
-- [ ] Measure any visible floor deflection: _______ inches over _______ feet
+### Floors
 
-**Assessment:**
-- [ ] Cosmetic (hairline, <1/16")
-- [ ] Moderate (1/16" - 1/4")
-- [ ] Structural concern (>1/4")
+- [ ] Floor feels sloped or uneven
+- [ ] Ball rolls on floor
+- [ ] Doors rubbing floor
+
+**Notes:** _______________________________________________
 
 ---
 
-## 2. Doors Not Closing Assessment
+## 3️⃣ Doors & Alignment (5 min)
 
-**Doors affected:** Master bedroom, bath 1, bath 2, bedroom, laundry
+**For each door that won't close:**
 
-### For each problematic door:
+- [ ] Photo of door closed
+- [ ] Photo of gap
+- [ ] Gap looks similar across multiple doors? (structural sign)
+- [ ] Hinges loose or sagging
 
-**Door location: _____________________**
+**Quick judgment:**
+- [ ] Likely installation issue
+- [ ] Likely movement/settling
 
-- [ ] Photograph door in closed/latched position
-- [ ] Photograph gap preventing closure
-- [ ] Measure gap at strike plate: _______ inches
-- [ ] Measure gaps:
-  - Top: _______ inches
-  - Bottom: _______ inches
-  - Hinge side: _______ inches
-  - Latch side: _______ inches
-- [ ] Check door frame with level:
-  - Left jamb: _______ degrees off plumb
-  - Right jamb: _______ degrees off plumb
-  - Head jamb: _______ degrees off level
-- [ ] Inspect hinges:
-  - [ ] Screws tight
-  - [ ] Hinges aligned
-  - [ ] Signs of sagging
-- [ ] Strike plate alignment: _______ inches off
-- [ ] Floor level at doorway: _______
-- [ ] Notes: _________________________________
-
-**Pattern analysis:**
-- [ ] Similar gap pattern across multiple doors (indicates structural issue)
-- [ ] Individual door issues only (may be installation/hardware)
+**Notes:** _______________________________________________
 
 ---
 
-## 3. Water Intrusion (Master Bedroom)
+## 4️⃣ Water Intrusion (Critical – 10 min)
 
-**CRITICAL - Moisture Testing Required**
+### Visual
 
-### Moisture Meter Readings:
+- [ ] Water stains on walls or ceiling
+- [ ] Baseboards swollen or warped
+- [ ] Musty smell
+- [ ] Window seal damaged
 
-**Wall measurements (take at multiple heights):**
-- Below window - top: _______% moisture
-- Below window - middle: _______% moisture
-- Below window - bottom: _______% moisture
-- Adjacent walls: _______% moisture
-- Reference dry wall: _______% (baseline)
+**📸 Photograph:**
+- Window (inside & outside)
+- Stains
+- Baseboards
 
-**Floor measurements:**
-- Near window: _______% moisture
-- Center of room: _______% moisture
-- Under furniture: _______% moisture
-- Subfloor (if accessible): _______% moisture
+### Moisture (if meter available)
+
+- [ ] Dry reference wall: _______%
+- [ ] Suspect area: _______%
 
 **Interpretation:**
-- Normal: <10%
-- Elevated: 10-15%
-- High concern: 15-20%
-- Active water damage: >20%
+- <10% normal
+- 10–15% elevated
+- 15%+ concerning
 
-### Visual Inspection:
-
-- [ ] Photograph window in current state
-- [ ] Check window operation (open/close smoothly)
-- [ ] Inspect window seal/caulking condition
-- [ ] Check window sill for water staining
-- [ ] Look for exterior flashing issues
-- [ ] Document water stains on wall (photograph with scale)
-- [ ] Check baseboards for warping/staining
-- [ ] Look behind/under furniture
-- [ ] Inspect closet interior walls
-- [ ] Check for soft drywall (probe gently)
-- [ ] Smell for musty/mold odors
-
-### Mold Assessment:
-
-- [ ] Visual mold present:
-  - Location: _________________________________
-  - Color: _________________________________
-  - Approximate size: _______
-- [ ] Musty odor present
-- [ ] Discoloration without visible mold
-- [ ] Document with photos
-
-### Timeline:
-
-- When was window discovered open? _______
-- How long exposed to weather? _______
-- Rain events during exposure? _______
-- When was it closed? _______
-- Days since closure: _______
-- Any drying efforts attempted? _______
+**Notes:** _______________________________________________
 
 ---
 
-## 4. Fire Suppression Water Tank Access
+## 5️⃣ Fire Sprinkler / Water Tank Access (2 min)
 
-**Location:** Utility room / backyard
+- [ ] Access door fully closed
+- [ ] Lock present & functional
+- [ ] No water or debris inside
+- [ ] Tank looks secure (no leaks/rust)
 
-- [ ] Photograph current state of access door
-- [ ] Door status:
-  - [ ] Properly closed and secured
-  - [ ] Open
-  - [ ] Partially open
-  - [ ] Locking mechanism present
-  - [ ] Locking mechanism functional
-- [ ] Check for water/debris intrusion into equipment area
-- [ ] Inspect tank condition:
-  - [ ] Visible leaks
-  - [ ] Corrosion
-  - [ ] Proper mounting
-  - [ ] Pressure gauge reading: _______
-- [ ] Check for code compliance issues
-- [ ] Verify access panel meets fire safety requirements
-- [ ] Notes: _________________________________
+**📸 Photo of access panel**
+
+**Notes:** _______________________________________________
 
 ---
 
-## 5. Additional Systems Check
+## 6️⃣ Quick Systems Sanity Check (10 min)
 
-### Windows (all rooms):
+### Windows
+- [ ] All open & close
+- [ ] Locks work
 
-- [ ] Test all windows for proper operation
-- [ ] Check window locks function properly
-- [ ] Inspect seals/weatherstripping
-- [ ] Look for condensation between panes
-- [ ] Note any stuck or difficult to operate: _______
+### Plumbing
+- [ ] Run all faucets
+- [ ] Flush toilets
+- [ ] Look under sinks
 
-### Plumbing:
+### Electrical
+- [ ] Lights work
+- [ ] Outlets power device
+- [ ] GFCI test
 
-- [ ] Run all faucets (hot & cold)
-- [ ] Check water pressure
-- [ ] Flush all toilets
-- [ ] Check under sinks for leaks
-- [ ] Run shower/tub, check drainage
-- [ ] Listen for unusual pipe noises
-- [ ] Check water heater operation
-- [ ] Note any issues: _______
+### HVAC
+- [ ] Turns on
+- [ ] Air from vents
 
-### HVAC:
-
-- [ ] System turns on properly
-- [ ] Air flow from all vents
-- [ ] Check thermostat functionality
-- [ ] Listen for unusual noises
-- [ ] Check filter condition
-- [ ] Inspect outdoor unit (if applicable)
-- [ ] Notes: _______
-
-### Electrical:
-
-- [ ] Test all outlets (use phone charger or tester)
-- [ ] Test all light switches
-- [ ] Check breaker panel - all labeled?
-- [ ] Look for tripped breakers
-- [ ] Check GFCI outlets (test button)
-- [ ] Note any non-functional: _______
-
-### Ceilings:
-
-- [ ] Look for water stains (roof leaks)
-- [ ] Check for sagging or bulging
-- [ ] Inspect light fixtures for moisture
-- [ ] Notes: _______
-
-### Exterior:
-
-- [ ] Check grading slopes away from foundation
-- [ ] Inspect drainage (gutters, downspouts)
-- [ ] Look for standing water areas
-- [ ] Check siding for gaps or damage
-- [ ] Inspect foundation vents (not blocked)
-- [ ] Notes: _______
+**Notes:** _______________________________________________
 
 ---
 
-## 6. Photo Documentation Checklist
+## 7️⃣ Exterior (5 min)
 
-Use consistent methodology for before/after comparisons:
+- [ ] Ground slopes away from unit
+- [ ] No standing water near foundation
+- [ ] Siding intact (no gaps)
+- [ ] Gutters/downspouts clear
 
-- [ ] Overall room shots from doorway (all rooms)
-- [ ] Each documented issue with scale reference
-- [ ] Close-ups of cracks (with ruler/coin)
-- [ ] Door gaps (with ruler showing measurement)
-- [ ] Water damage areas (multiple angles)
-- [ ] Utility area/tank access
-- [ ] Foundation exterior
-- [ ] Any new issues discovered
-- [ ] Video walkthroughs (2-3 min per room)
+**📸 Foundation + drainage photo**
 
-**Camera settings:**
-- Enable GPS location tagging (if privacy allows)
-- Ensure timestamp is enabled and accurate
-- Use flash in dark areas for clarity
+**Notes:** _______________________________________________
 
 ---
 
-## 7. Questions to Ask Onsite
+## 8️⃣ Photo Rules (Very Important)
 
-If meeting with contractor/owner:
-
-- [ ] When was construction completed? _______
-- [ ] When were issues first noticed? _______
-- [ ] Have any repairs been attempted? _______
-- [ ] Is unit currently occupied? _______
-- [ ] If occupied, move-in date? _______
-- [ ] Recent weather events (heavy rain, freeze)? _______
-- [ ] Any warranties still active? _______
-- [ ] Previous inspection reports available? _______
+- [ ] One wide shot per room
+- [ ] One close-up per issue
+- [ ] Always include scale
+- [ ] Short video walkthrough (1–2 min total)
 
 ---
 
-## 8. Comparison to Previous Visit
+## 9️⃣ Compare to Last Visit
 
-**Previous visit date:** 2025-12-26
+**Last visit:** 2025-12-26
 
-For each documented issue, note if:
-- [ ] Condition unchanged
-- [ ] Condition worsened
-- [ ] Condition improved
-- [ ] New damage/issues appeared
+- [ ] Same
+- [ ] Worse
+- [ ] Improved
+- [ ] New issue
 
-**Specific comparisons:**
-- Wall cracks: Any new cracks or widening? _______
-- Door issues: More doors affected? _______
-- Water damage: Drying progress? New moisture? _______
+**Key changes noted:**
 
----
+**Cracks:** _______________________________________________
 
-## 9. Priority Findings
+**Doors:** _______________________________________________
 
-### Critical (immediate attention needed):
-
-1. _________________________________
-2. _________________________________
-3. _________________________________
-
-### High (should address soon):
-
-1. _________________________________
-2. _________________________________
-3. _________________________________
-
-### Moderate (monitor or schedule):
-
-1. _________________________________
-2. _________________________________
+**Water:** _______________________________________________
 
 ---
 
-## 10. Next Steps
+## 🔟 Findings Summary (Write This Onsite)
 
-- [ ] Download photos to computer (backup immediately)
-- [ ] Organize photos by room and issue
-- [ ] Update evidence.yaml with new media entries
-- [ ] Upload photos to R2 bucket
-- [ ] Create comparison images (old vs new)
-- [ ] Draft follow-up communication
-- [ ] Schedule any necessary specialist inspections:
-  - [ ] Structural engineer (if foundation/framing concerns)
-  - [ ] Mold remediation specialist (if moisture >20%)
-  - [ ] Licensed contractor estimates
-
----
-
-## Notes & Observations
-
-Use this space for additional observations, concerns, or items that don't fit above categories:
+### 🚨 Critical (stop-the-line)
 
 _______________________________________________
 _______________________________________________
+
+### ⚠️ Needs follow-up
+
 _______________________________________________
 _______________________________________________
-_______________________________________________
-_______________________________________________
-_______________________________________________
-_______________________________________________
+
+### 👀 Monitor
+
 _______________________________________________
 _______________________________________________
 
 ---
 
-**Inspection completed:** Yes [ ] No [ ]
-**Follow-up visit needed:** Yes [ ] No [ ]
-**Urgent issues identified:** Yes [ ] No [ ]
+## 1️⃣1️⃣ Next Actions
+
+- [ ] Backup photos immediately
+- [ ] Organize by room
+- [ ] Send written summary (same day)
+- [ ] Request specialist if needed:
+  - [ ] Structural engineer
+  - [ ] Mold / water specialist
+  - [ ] Contractor correction
+
+---
+
+**Inspector Signature:** _______________________________________________
+
+**Follow-up Needed:** [ ] Yes  [ ] No
