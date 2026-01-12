@@ -1,0 +1,246 @@
+---
+import Layout from '../components/Layout.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+// Read the markdown checklist content
+const checklistPath = resolve(process.cwd(), '../content/onsite-checklist.md');
+const checklistContent = readFileSync(checklistPath, 'utf-8');
+
+// Parse the markdown into sections for better rendering
+const sections = checklistContent.split('\n## ').map((section, index) => {
+  if (index === 0) {
+    // First section contains the title and metadata
+    const lines = section.split('\n');
+    return {
+      title: lines[0].replace('# ', ''),
+      content: lines.slice(1).join('\n'),
+    };
+  }
+  const lines = section.split('\n');
+  return {
+    title: lines[0],
+    content: lines.slice(1).join('\n'),
+  };
+});
+
+// Convert markdown checkboxes and basic formatting
+function renderContent(content: string) {
+  return content
+    .replace(/- \[ \] /g, '☐ ')
+    .replace(/- \[x\] /g, '☑ ')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/__(.*?)__/g, '<span class="underline">$1</span>')
+    .replace(/\n\n/g, '</p><p class="mt-2">')
+    .replace(/\n/g, '<br/>');
+}
+---
+
+<Layout title="Onsite Inspection Checklist" description="Comprehensive checklist for ADU onsite inspections">
+  <div class="max-w-4xl mx-auto">
+    <!-- Screen-only controls -->
+    <div class="print:hidden mb-6 bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <h2 class="text-lg font-semibold text-gray-900">Printable Inspection Checklist</h2>
+          <p class="text-sm text-gray-600">Use this comprehensive checklist during your onsite visit</p>
+        </div>
+        <button
+          onclick="window.print()"
+          class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+        >
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+            />
+          </svg>
+          Print Checklist
+        </button>
+      </div>
+      <div class="mt-4 text-sm text-gray-600">
+        <p>
+          <strong>Tip:</strong> This checklist is optimized for printing. Use your browser's print
+          function (or the button above) to create a PDF or print physical copies.
+        </p>
+      </div>
+    </div>
+
+    <!-- Checklist Content -->
+    <div class="checklist-container bg-white rounded-lg shadow-sm border border-gray-200 p-8 print:shadow-none print:border-0">
+      {
+        sections.map((section, index) => (
+          <div class:list={['section', { 'page-break-before': index > 0 && [0, 4, 8].includes(index) }]}>
+            {index === 0 ? (
+              <div class="header-section mb-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-4 print:text-4xl">{section.title}</h1>
+                <div
+                  class="metadata text-gray-700"
+                  set:html={renderContent(section.content)}
+                />
+              </div>
+            ) : (
+              <div class="content-section mb-8 page-break-inside-avoid">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 print:text-2xl">
+                  {section.title}
+                </h2>
+                <div
+                  class="section-content text-gray-700 leading-relaxed"
+                  set:html={renderContent(section.content)}
+                />
+              </div>
+            )}
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Back to site link (screen only) -->
+    <div class="print:hidden mt-6 text-center">
+      <a
+        href="/downloads"
+        class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+      >
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        Back to Downloads
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  /* Print-specific styles */
+  @media print {
+    /* Remove margins and optimize for printing */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Page setup */
+    @page {
+      margin: 0.75in;
+      size: letter;
+    }
+
+    /* Typography optimization for print */
+    .checklist-container {
+      font-size: 10pt;
+      line-height: 1.4;
+    }
+
+    h1 {
+      font-size: 18pt;
+      margin-bottom: 12pt;
+    }
+
+    h2 {
+      font-size: 14pt;
+      margin-top: 12pt;
+      margin-bottom: 8pt;
+      page-break-after: avoid;
+    }
+
+    h3 {
+      font-size: 12pt;
+      margin-top: 8pt;
+      margin-bottom: 4pt;
+      page-break-after: avoid;
+    }
+
+    /* Ensure sections stay together when possible */
+    .page-break-inside-avoid {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* Force page breaks at strategic points */
+    .page-break-before {
+      page-break-before: always;
+      break-before: page;
+    }
+
+    /* Checkbox styling for print */
+    .section-content {
+      orphans: 3;
+      widows: 3;
+    }
+
+    /* Make checkboxes more print-friendly */
+    :global(body) {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Hide unnecessary elements */
+    nav,
+    footer,
+    header,
+    .print\:hidden {
+      display: none !important;
+    }
+
+    /* Optimize link display */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Remove shadows and backgrounds for cleaner print */
+    .checklist-container {
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    /* Border styles for print */
+    .border-b-2 {
+      border-bottom: 2pt solid #333;
+    }
+  }
+
+  /* Screen styles */
+  @media screen {
+    .section-content :global(p) {
+      margin-bottom: 0.5rem;
+    }
+
+    .section-content :global(strong) {
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    /* Checkbox styling */
+    .section-content {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+        'Courier New', monospace;
+      font-size: 0.9rem;
+    }
+
+    /* Better line spacing for readability */
+    .section-content :global(br) {
+      line-height: 1.8;
+    }
+  }
+
+  /* Common styles */
+  .metadata :global(p),
+  .section-content :global(p) {
+    margin-bottom: 0.5rem;
+  }
+
+  .metadata :global(strong),
+  .section-content :global(strong) {
+    font-weight: 600;
+  }
+</style>
