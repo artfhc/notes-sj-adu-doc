@@ -1,52 +1,169 @@
 site:
   title: "ADU Issue Log"
   location_general: "San Jose, CA (ADU)"
-  last_updated: "2025-12-27"
+  last_updated: "2026-02-06"
   disclaimer: "Public documentation of construction issues. Personal identifiers removed."
 
 issues:
   - id: "wall-cracks"
     title: "Wall cracks in multiple rooms"
     slug: "wall-cracks"
-    status: "Open"
-    summary: "Vertical/horizontal hairline cracks observed throughout the unit."
+    status: "Acknowledged"
+    summary: "Vertical/horizontal hairline cracks observed throughout the unit. Drywall settlement cracks."
     rooms: ["master_bed", "bedroom", "bath_1", "bath_2", "living", "laundry"]
     requested_remediation:
-      - "Assess root cause (settlement vs framing)"
-      - "Repair and re-texture/repaint affected drywall"
-      - "Confirm if any structural movement is present"
+      - "Patch and paint all interior drywall settlement cracks"
+      - "Monitor repaired areas for re-cracking in next few weeks"
+      - "If cracks reappear, open drywall and repair properly"
+    contractor_response: "Repairing all interior cracks after power is on to prevent any missed imperfections. Will complete before final walkthrough."
+    date_acknowledged: "2026-02-06"
 
   - id: "doors-not-closing"
     title: "Doors not closing (frame shift)"
     slug: "doors-not-closing"
-    status: "Open"
+    status: "Completed"
     summary: "Multiple interior doors do not latch/close properly, suggesting frame alignment shift."
     rooms: ["master_bed", "bath_1", "bath_2", "bedroom", "laundry"]
     requested_remediation:
-      - "Re-square door frames"
-      - "Adjust hinges/strike plates"
-      - "Verify framing alignment and settlement impacts"
+      - "Fine-tune interior door alignment to eliminate catching or resistance"
+    contractor_response: "The doors are done. No additional work needed."
+    date_acknowledged: "2026-02-06"
+    date_completed: "2026-02-06"
 
   - id: "water-heater-door"
     title: "Backyard fire suppression water tank access door left open"
     slug: "water-heater-door"
-    status: "Open"
+    status: "Acknowledged"
     summary: "Access door to backyard fire suppression water tank was found not closed."
     rooms: ["utility"]
     requested_remediation:
       - "Close/secure access panel"
       - "Confirm no code/safety concerns"
+    contractor_response: "Will be addressed during final cleanup and walkthrough."
+    date_acknowledged: "2026-02-06"
+
+  - id: "downspout-extension"
+    title: "Downspout extension needed"
+    slug: "downspout-extension"
+    status: "Open"
+    summary: "ADU downspout needs to be extended so water discharges 3-5 feet away from foundation."
+    rooms: ["exterior"]
+    requested_remediation:
+      - "Extend downspout to discharge water 3-5 feet from foundation"
+    contractor_response: "Homeowner to provide extender from Home Depot - least expensive option. Contractor does not extend downspouts."
+    date_acknowledged: "2026-02-06"
+
+  - id: "electric-panel-access"
+    title: "Electric panel access needs finishing"
+    slug: "electric-panel-access"
+    status: "Acknowledged"
+    summary: "Rough drywall cutouts below electric panels need to be replaced with flush, finished access panels."
+    rooms: ["utility"]
+    requested_remediation:
+      - "Replace rough drywall cutouts with flush, finished access panels"
+    contractor_response: "GC will repair and make look nice. Will choose best option and approve final work with homeowner."
+    date_acknowledged: "2026-02-06"
+
+  - id: "floor-level-check"
+    title: "Floor level verification"
+    slug: "floor-level-check"
+    status: "Completed"
+    summary: "Floor level in bedroom and living room to be checked for levelness."
+    rooms: ["bedroom", "living"]
+    requested_remediation:
+      - "Check floor level in bedroom and living room"
+    contractor_response: "Floor level checked in bedroom and we are good. Will do final walk-through check after everything is done."
+    date_acknowledged: "2026-02-06"
+    date_completed: "2026-02-06"
+
+  - id: "entry-step-height"
+    title: "Entry step code compliance"
+    slug: "entry-step-height"
+    status: "Scheduled"
+    summary: "Entry step height to be confirmed for code compliance; intermediate step may be needed."
+    rooms: ["exterior"]
+    requested_remediation:
+      - "Confirm entry step height meets code requirements"
+      - "Add intermediate step if needed"
+    contractor_response: "The step is code! Kevin is getting a price for adding an additional step and railing, also pricing gutter guards."
+    date_acknowledged: "2026-02-06"
+
+  - id: "window-security"
+    title: "Window security verification"
+    slug: "window-security"
+    status: "Completed"
+    summary: "Verify all windows lock properly and are secured."
+    rooms: ["master_bed", "bedroom", "living"]
+    requested_remediation:
+      - "Verify all windows lock properly"
+      - "Ensure windows are secured"
+    contractor_response: "All windows were locked prior to our exit."
+    date_acknowledged: "2026-02-06"
+    date_completed: "2026-02-06"
+
+  - id: "main-house-stucco"
+    title: "Main house stucco repair"
+    slug: "main-house-stucco"
+    status: "Acknowledged"
+    summary: "Patch and repair stucco damage and cracks on main house caused by ADU construction."
+    rooms: ["main_house"]
+    requested_remediation:
+      - "Patch and repair stucco damage"
+      - "Repair cracks caused by ADU construction"
+    contractor_response: "GC has the punch list for the main house stucco and siding."
+    date_acknowledged: "2026-02-06"
+
+  - id: "main-house-downspout"
+    title: "Main house downspout repair"
+    slug: "main-house-downspout"
+    status: "Acknowledged"
+    summary: "Repair and fix downspout on main house damaged during ADU construction."
+    rooms: ["main_house"]
+    requested_remediation:
+      - "Repair and fix damaged downspout"
+    contractor_response: "Included in main house punch list."
+    date_acknowledged: "2026-02-06"
+
+  - id: "extra-water-tank"
+    title: "Extra water tank on site"
+    slug: "extra-water-tank"
+    status: "Acknowledged"
+    summary: "Extra water tank left onsite - purpose to be determined and removed if no longer needed."
+    rooms: ["exterior"]
+    requested_remediation:
+      - "Determine purpose of extra water tank"
+      - "Remove if no longer needed"
+    contractor_response: "Will be removed during final cleanup before final walkthrough."
+    date_acknowledged: "2026-02-06"
+
+  - id: "construction-materials-removal"
+    title: "Construction materials and amenities removal"
+    slug: "construction-materials-removal"
+    status: "Acknowledged"
+    summary: "Remove all temporary materials and wood taken out of garden during construction. Garden amenities deconstructed for ADU installation to be fully removed."
+    rooms: ["exterior"]
+    requested_remediation:
+      - "Remove all leftover material"
+      - "Clean out ADU"
+      - "Remove all garden amenities/materials per original agreement"
+    contractor_response: "Will remove all leftover material by final and do clean out of the ADU. These will be removed when we clean the home after all touch-ups and before final walk-through."
+    date_acknowledged: "2026-02-06"
+    references:
+      - "amenities-trash-001.jpg"
+      - "amenities-trash-002.jpg"
 
   - id: "window-water-intrusion"
     title: "Master bedroom window left open → water intrusion"
     slug: "window-left-open-water-intrusion"
-    status: "Open"
+    status: "Acknowledged"
     summary: "Master bedroom window was open; water leaked in. Watermarks on wall and floor."
     rooms: ["master_bed"]
     requested_remediation:
       - "Water intrusion assessment (moisture test)"
       - "Dry-out and remediation plan"
       - "Repair drywall/floor as needed; confirm mold prevention steps"
+    contractor_response: "Will be addressed as part of interior crack repairs and drywall touch-ups before final walkthrough."
+    date_acknowledged: "2026-02-06"
 
 timeline:
   - date: "2025-12-26"
@@ -57,6 +174,47 @@ timeline:
       - "Backyard fire suppression water tank access door not closed"
       - "Window open; water intrusion with visible watermarks"
     related_issues: ["wall-cracks", "doors-not-closing", "water-heater-door", "window-water-intrusion"]
+
+  - date: "2026-02-06"
+    title: "Punch list submitted to contractor"
+    notes:
+      - "Comprehensive punch list sent via email covering ADU and main house items"
+      - "11 specific items identified for immediate fixes and checks"
+      - "Requested downspout extension, drywall crack repairs, electric panel access finishing"
+      - "Door alignment, floor level checks, entry step verification requested"
+      - "Main house stucco repair and downspout repair requested"
+      - "Construction material removal and extra water tank removal requested"
+    related_issues: ["wall-cracks", "doors-not-closing", "electric-panel-access", "downspout-extension", "floor-level-check", "entry-step-height", "window-security", "main-house-stucco", "main-house-downspout", "extra-water-tank", "construction-materials-removal"]
+
+  - date: "2026-02-06"
+    title: "Contractor response received"
+    notes:
+      - "Doors confirmed complete - no additional work needed"
+      - "Floor level checked in bedroom - verified good"
+      - "All windows confirmed locked"
+      - "Interior cracks will be repaired after power is on"
+      - "Electric panel access to be finished by GC"
+      - "Entry step confirmed code compliant; pricing additional step and railing"
+      - "Downspouts not extended by contractor - homeowner to provide extenders"
+      - "All materials and cleanup to be done before final walkthrough"
+      - "Waiting for PG&E to schedule power connection"
+    related_issues: ["wall-cracks", "doors-not-closing", "electric-panel-access", "downspout-extension", "floor-level-check", "entry-step-height", "window-security", "construction-materials-removal", "extra-water-tank"]
+
+  - date: "2026-02-06"
+    title: "Follow-up confirmation request"
+    notes:
+      - "Requested confirmation on extra water tank removal"
+      - "Requested confirmation on full removal of garden amenities per original agreement"
+      - "Awaiting final walkthrough after utilities connected and punch list complete"
+    related_issues: ["extra-water-tank", "construction-materials-removal"]
+
+  - date: "2026-02-06"
+    title: "Contractor final confirmation"
+    notes:
+      - "Confirmed all materials and tank will be removed during final cleanup"
+      - "Cleanup to occur after all touch-ups and before final walkthrough"
+      - "Still waiting for power connection from PG&E"
+    related_issues: ["extra-water-tank", "construction-materials-removal"]
 
 media:
   - id: "img_001"
