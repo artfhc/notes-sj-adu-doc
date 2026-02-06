@@ -9,6 +9,8 @@ export const roomSlugSchema = z.enum([
   'living',
   'laundry',
   'utility',
+  'exterior',
+  'main_house',
 ]);
 
 export type RoomSlug = z.infer<typeof roomSlugSchema>;
@@ -18,6 +20,7 @@ export const issueStatusSchema = z.enum([
   'Open',
   'Acknowledged',
   'Scheduled',
+  'Completed',
   'Fixed',
   'Reopened',
 ]);
@@ -96,4 +99,6 @@ export const roomDisplayNames: Record<RoomSlug, string> = {
   living: 'Living Room',
   laundry: 'Laundry Room',
   utility: 'Utility Room',
+  exterior: 'Exterior',
+  main_house: 'Main House',
 };
